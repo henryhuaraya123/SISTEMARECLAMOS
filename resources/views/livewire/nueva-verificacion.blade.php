@@ -36,7 +36,7 @@
                         <option value="POR CAMBIO DE TARIFA">VERIFICACION POR CAMBIO DE TARIFA</option>
                     </select>
                 </div>
-                <br>
+                
                 <div class="w-full flex flex-row justify-between">
                     <div class="m-4">
                         <label for="dni">DNI:</label>
@@ -51,17 +51,17 @@
                         <input type="text" class=" in w-full mt-2" name="celular" id="celular" required>
                     </div>
                 </div>
-                <br>
+                
                 <div class="m-4">
                     <label for="nombre">Nombre Completo:</label>
                     <input type="text" class="in w-full mt-2 " name="nombre_completo" id="nombre_completo" required>
                 </div>
-                <br>
+                
                 <div class="m-4">
                     <label for="direccion">Direccion:</label>
                     <input type="text" class="in w-full mt-2" name="direccion" id="direccion" required>
                 </div>
-                <br>
+                
                 <div class="w-full flex flex-row justify-between">
                     <div class="m-4">
                         <label for="ruta">Ruta:</label>

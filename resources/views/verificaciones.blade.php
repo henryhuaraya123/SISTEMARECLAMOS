@@ -21,10 +21,10 @@
                 <input type="text" placeholder="Ingresar dato" class="w-full md:w-80 px-3 h-10 rounded-l border-2 border-gray-500  focus:border-gray-500" name="query">
                 <button type="submit" class="bg-gray-500 text-white rounded-r px-2 md:px-3 py-0 md:py-1 hover:bg-gray-600" type="submit">Buscar</button>
             </form>
-            <div class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded ml-1" style="margin: 15px 0px 15px 0px; display: {{ $filtro }};">
+            <div class="bg-red-500 hover:bg-red-600 text-dark font-bold py-2 px-4 rounded ml-1" style="margin: 15px 15px 15px 0px; display: {{ $filtro }}; color: black;">
                 <form action="{{ route('verificaciones') }}" method="GET">
-                    <button class="button text-gray-500" type="submit">
-                        ❌
+                    <button class="button" type="submit">
+                        X
                     </button>
                 </form>
             </div>
@@ -36,7 +36,7 @@
                     <table id="example" class="table table-striped" style="width:98%; text-align: center; margin: 15px 15px 15px 15px; border: 3.5px; border-style: solid;
   border-color: white;">
                         <thead class="text-s uppercase border-b bg-gray-700 rounded text-white font-bold">
-                            <tr class="text-left">
+                            <tr class="text-center">
                                 <th scope="col" class="px-[1.2rem] py-2">N° SUMINISTRO</th>
                                 <th scope="col" class="px-1 py-2">NOMBRES</th>
                                 <th scope="col" class="px-1 py-2">CELULAR</th>
@@ -48,7 +48,7 @@
                         </thead>
                         <tbody style="font-size: 0.7rem;">
                                 @foreach ($verificaciones as $verificacion)
-                                <tr id="{{ $verificacion->id }}" class="border-b border-gray-700 hover:bg-slate-100 text-left" style="color:white;">
+                                <tr id="{{ $verificacion->id }}" class="border-b border-gray-700 text-center  dark:text-white">
                                     <td class="py-2">{{ $verificacion->suministro }}</td>
                                     <td class="py-2">{{ $verificacion->nombre_completo}}</td>
                                     <td class="py-2">{{ $verificacion->celular}}</td>
