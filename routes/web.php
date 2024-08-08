@@ -16,7 +16,8 @@ Route::middleware([
     
     Route::get('/dashboard', function () {
         $verificaciones = Verificacion::orderBy('id', 'DESC')->paginate(10);
-        return view('verificaciones', compact('verificaciones'));;
+        $filtro = 'none';
+        return view('verificaciones', compact('verificaciones','filtro'));;
     })->name('dashboard');
 
     Route::get('/verificaciones', [VerificacionController::class, 'index'])->name('verificaciones');

@@ -110,6 +110,8 @@ class VerificacionController extends Controller
         } else {
             $verificaciones = Verificacion::all();
         }
+
+        
         $filtro = '';
         return view('verificaciones', compact('verificaciones','filtro'));
     }
